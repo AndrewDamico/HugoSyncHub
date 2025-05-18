@@ -1,4 +1,4 @@
-package hugosynchub
+package hugoops
 
 import (
 	"fmt"
