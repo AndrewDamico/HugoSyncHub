@@ -1,4 +1,4 @@
-package hugosynchub
+package main
 
 import (
 	"fmt"
@@ -8,16 +8,16 @@ import (
 )
 
 func main() {
-	// 1) Determine your repo root (here: current working directory)
+	// Determine the repo root (current working directory)
 	root, err := os.Getwd()
 	if err != nil {
-		fmt.Fprintf(os.Stderr, "failed to get working dir: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Error getting current directory: %v\n", err)
 		os.Exit(1)
 	}
 
-	// 2) Call InitializeSite on that root
+	// Run the initializer
 	if err := hugoops.InitializeSite(root); err != nil {
-		fmt.Fprintf(os.Stderr, "initializer error: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Initialization failed: %v\n", err)
 		os.Exit(1)
 	}
 
