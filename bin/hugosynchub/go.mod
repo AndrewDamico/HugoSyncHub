@@ -1,4 +1,4 @@
-module github.com/AndrewDamico/HugoSyncHub
+module github.com/AndrewDamico/hugosynchub
 
 go 1.22.4
 

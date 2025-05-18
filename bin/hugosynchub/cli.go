@@ -123,12 +123,7 @@ func readLine(r *bufio.Reader) string {
 
 // getSettingsPath returns the path to ../../data/settings.json relative to the executable
 func getSettingsPath() (string, error) {
-	exePath, err := os.Executable()
-	if err != nil {
-		return "", err
-	}
-	baseDir := filepath.Dir(exePath)
-	dataDir := filepath.Join(baseDir, "..", "..", "data")
+	dataDir := filepath.Join(".", "data")
 	if err := os.MkdirAll(dataDir, 0755); err != nil {
 		return "", err
 	}
