@@ -1,0 +1,1 @@
+CLI tool to sync a Hugo site repo with GitHub and deploy to GitHub Pages.
