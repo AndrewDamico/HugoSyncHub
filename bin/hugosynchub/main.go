@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/AndrewDamico/HugoSyncHub/hugosynchub"
+	"github.com/AndrewDamico/hugosynchub"
 )
 
 func main() {
