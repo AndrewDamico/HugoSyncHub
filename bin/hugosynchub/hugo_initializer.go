@@ -1,5 +1,4 @@
-// In directory: hugoops
-package hugoops
+package main
 
 import (
 	"fmt"
