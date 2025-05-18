@@ -1,0 +1,16 @@
+# hugo_sync_hub.toml
+
+# A list of directories (or files) to mount into the Hugo site
+[[mounts]]
+# path *on disk* (relative to the Hugo site root)
+source = "../themes"
+# path *in Hugo’s virtual FS* (so Hugo will see it under this folder)
+target = "themes"
+
+[[mounts]]
+source = "../static"
+target = "static"
+
+[[mounts]]
+source = "../i18n"
+target = "i18n"
